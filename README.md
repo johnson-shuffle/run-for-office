@@ -1,1 +1,17 @@
-# run-for-office
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+## Overview
+
+> Run For Office aims to have data about all elected offices. We began
+> with the United States and we aim to release data for all elected
+> positions across the country in advance of the upcoming 2020
+> elections—putting candidacy information at the fingertips of 120
+> million people.
+
+Currently, the code in this repository relates to the collection of this
+information for the following states:
+
+  - Louisiana
+
+  - Washington
