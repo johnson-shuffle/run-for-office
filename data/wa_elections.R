@@ -156,7 +156,7 @@ wa_office <- map2(shs$Var1, shs$Var2, off_fun, pb = pb)
 save(wa_office, file = 'out/wa_offices_2012_2018.Rda')
 
 
-# ----- Tidy up results----------------------------------------------------
+# ----- Tidy Up Results----------------------------------------------------
 
 # load
 load('out/wa_results_2012_2018.Rda')
@@ -193,7 +193,7 @@ res %<>%
   })
 
 
-# ----- Tidy up offices----------------------------------------------------
+# ----- Tidy Up Offices----------------------------------------------------
 
 # load
 load('out/wa_offices_2012_2018.Rda')

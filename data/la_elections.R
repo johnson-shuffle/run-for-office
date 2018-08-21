@@ -1,9 +1,11 @@
-load_tidy()
+# ---- Preample -----------------------------------------------------------
 
-options(java.parameters = "-Xmx8000m") ;  library(xlsx)
+options(java.parameters = "-Xmx8000m")
+
+library(xlsx)
 
 
-# ----- preliminaries -----------------------------------------------------
+# ----- Preliminaries -----------------------------------------------------
 
 # filename
 fn <- 'la_elections_14'
@@ -22,7 +24,7 @@ par <- read.xlsx(
 par <- par[, 1]
 
 
-# ----- multi-parish (parish) ---------------------------------------------
+# ----- Multi-parish (Parish) ---------------------------------------------
 
 # read in data
 xls <- read.xlsx(
@@ -69,7 +71,7 @@ for (i in seq_along(str)) {
 x <- do.call(plyr::rbind.fill, x)
 
 
-# ----- parish workbooks --------------------------------------------------
+# ----- Parish Workbooks --------------------------------------------------
 
 # helper function
 par_fun <- function(wb) {
@@ -129,7 +131,7 @@ z <- map(y, ~.x$result)
 z <- do.call(plyr::rbind.fill, z)
 
 
-# ----- final bind --------------------------------------------------------
+# ----- Final Bind --------------------------------------------------------
 
 out <- plyr::rbind.fill(x, z)
 
